@@ -1,0 +1,1118 @@
+/* Empty. Add your own CSS if you like */
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.tab{
+	background-color: #1565C0;
+	color: #FFFFFF !important;
+}
+.main-title{
+	font-family: 'Baumans', cursive;
+	color: #01579b;
+	font-weight: bold;
+	text-align: center;
+}
+.sub-title{
+	font-family: 'Baumans', cursive;
+	color: #66cdf1;
+}
+.avatar-container{
+	padding: 0px;
+	width: 100%;
+	top: 0px;
+	margin-left: 0px;
+	margin-top: 5px;
+	background: transparent;
+	border: 0px;
+	box-shadow: none;
+	padding-top: 10px;
+}
+.avatar-dark-ribbon{
+	background-color: #0D47A1;
+	height: 200px;
+	width: 200px;
+	margin: 0px auto;
+	border-radius: 50%;
+	padding: 10px;
+}
+.avatar-light-ribbon{
+	background-color: #1976D2;
+	height: 180px;
+	width: 180px;
+	margin: 0px auto;
+	border-radius: 50%;
+	padding: 10px;
+}
+.avatar-white-ribbon{
+	background-color: #FFFFFF;
+	height: 160px;
+	width: 160px;
+	margin: 0px auto;
+	border-radius: 50%;
+	padding: 10px;
+}
+.avatar-image{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+.item-icon{
+	position: absolute;
+	left: 20px;
+	color: #1976D2;
+	font-size: 25px;
+	top: 20px;
+}
+.item-details{
+	position: absolute;
+	left: 70px;
+}
+.item-settings{
+	top: 25px;
+}
+.create-element{
+	background-color: #FF4081;
+	color: white;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 80px;
+	right: 20px;
+	outline: none;
+	border: 0px;
+	box-shadow: 2px 2px 2px grey;
+	font-size: 20px;
+	font-weight: bold;
+}
+.ticket-image-container{
+	box-shadow: none;
+	width: 100%;
+	border: 0px;
+	height: 150px;
+	max-height: 150px;
+	padding: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+}
+.ticket-image{
+	height: 100%;
+	width: 100%;
+}
+.ticket-details-container{
+	box-shadow: none;
+	border: 0px;
+	padding: 0px;
+	margin-top: -12px;
+}
+.ticket-title{
+	display: block;
+	border-bottom: 1px solid #F5F5F5;
+}
+.ticket-details{
+	box-shadow: none;
+	border: 0px;
+	height: 40px;
+	margin-top: 20px;
+}
+.timings-container{
+	border: 1px solid #42A5F5;
+	color: #42A5F5;
+	background-color: white;
+	height: 50px;
+	padding: 10px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+.end-time{
+	border: 1px solid red;
+	color: red;
+}
+.dashboard-container{
+	margin: 0px auto;
+	width: 100%;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+.dashboard-item{
+	background-repeat : no-repeat;
+	padding-top: 0px;
+	margin:0px auto;
+	height: 150px;
+	width: 150px;
+}
+.dashboard-item-icon{
+	display: block;
+	text-align: center;
+	margin: 0px auto;
+	color: #01579B;
+	font-size: 50px;
+}
+.dashboard-item-value{
+	display: block;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 5px auto;
+	font-weight: 200;
+}
+.dashboard-item-text{
+	display: block;
+	font-size: 15px;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 10px auto;
+	font-weight: 200;
+}
+.wallet-image-container{
+	box-shadow: none;
+	border: 0px;
+	padding: 0px;
+	margin-left: 0px;
+	width: 100%;
+	background-color: #1565C0;
+	text-align: center;
+	font-family: 'Roboto',sans-serif;
+	height: 200px;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+.wallet-image{
+	width: 120px;
+	height: 100px;
+	display: block;
+	margin: 0px auto;
+}
+.wallet-text{
+	color: #FFFFFF;
+	font-size: 20px;
+}
+.wallet-history-item-icon{
+	width: 30%;
+	text-align: center;
+	border-right: 1px solid #E0E0E0;
+	padding: 20px;
+	font-size: 20px;
+	color: #1565C0;
+	position: absolute;
+	left: 0px;
+	height: 100px;
+}
+.wallet-history-item-details{
+	margin-left: 30%;
+	padding: 20px;
+	height: 100px;
+	font-size: 12px;
+}
+.wallet-history-details-item{
+	display: block;
+	color: #616161;
+	text-transform: uppercase;
+}
+.wallet-history-details-item-value{
+	color: #757575;
+	text-transform: none;
+}
+.wallet-history-item-footer{
+	border-top: 1px solid #E0E0E0;
+	padding-left: 20px;
+	padding-top: 10px;
+	color: #616161;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.ticket-history-item-icon{
+	width: 30%;
+	text-align: center;
+	border-right: 1px solid #E0E0E0;
+	padding: 20px;
+	font-size: 20px;
+	color: #1565C0;
+	position: absolute;
+	left: 0px;
+	height: 120px;
+}
+.ticket-history-item-details{
+	margin-left: 30%;
+	padding: 20px;
+	height: 120px;
+	font-size: 12px;
+}
+.ticket-history-details-item{
+	display: block;
+	color: #616161;
+	text-transform: uppercase;
+}
+.ticket-history-details-item-value{
+	color: #757575;
+	text-transform: none;
+}
+.ticket-history-item-footer{
+	border-top: 1px solid #E0E0E0;
+	padding-left: 20px;
+	padding-top: 10px;
+	color: #616161;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.register-content{
+	background-color: #FFFFFF;
+    width: 100%;
+    height: 110%;
+}
+.sign-in-button{
+	text-transform: uppercase;
+	color: white;
+}
+.shadow-button{
+	box-shadow: 2px 2px 2px grey;
+	color: blue;
+	text-decoration: none !important;
+	border: 1px solid #E0E0E0
+}
+.center-box-logo{
+	margin: 30px auto;
+	background: transparent;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+.error-item{
+	border-bottom: 1px solid red !important;
+}
+.error-info{
+	color: red;
+	font-size: 12px;
+}
+.center-box-logo > h1{
+	color:#455A64;
+}
+.center-box-logo img{
+	width: 80px;
+	height: 80px;
+}
+.center-box-grey{
+	margin: 0px auto;
+	background: transparent;
+	box-shadow: none;
+	padding: 10px 30px 30px 30px;
+}
+.form-item{
+	background:transparent;
+	text-align:center;
+	padding: 0px;
+	padding-top: 10px;
+	border-bottom: 1px solid grey !important;
+	border-top: 0px;
+}
+.form-item > .fa{
+	font-size: 25px;
+	padding-right: 10px;
+	color: #455A64;
+}
+input.form-input{
+	display:inline-block !important;
+	width:60%;
+	background-color:transparent;
+	color:#455A64;
+}
+.info-para{
+	color: #455A64;
+}
+.main-footer{
+	background: transparent;
+	text-align: center;
+	color: white;
+}
+.main-footer > div{
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	font-size: 5px;
+}
+.otp{
+	display: inline-block;
+	margin: 5px;
+	border: 1px solid #9E9E9E;
+}
+.otp-list{
+	text-align: center;
+}
+.otp-input{
+	width:50px;
+	border:10px solid rgba(0,0,0,0.5);
+	display: block;
+	text-align: center;
+}
+.settings-card{
+	padding-top: 25px;
+	height: 180px;
+	text-align: center;
+	margin: 0px;
+	color: white;
+	border-radius: 0px;
+	background: blue;
+  	background: -webkit-radial-gradient(circle, #80CBC4, #009688, #00659C);
+  	background: -o-radial-gradient(circle, #80CBC4, #009688, #00659C);
+  	background: -moz-radial-gradient(circle, #80CBC4, #009688, #00659C);
+  	background: radial-gradient(circle, #80CBC4, #009688, #00659C);
+}
+.settings-card > img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 4px solid white;
+	display: block;
+	margin: 0px auto;
+}
+.main-card{
+	padding: 0px !important;
+}
+.info{
+	color: blue;
+}
+.slider-pager-page > i{ 
+	font-size: 12px !important;
+	margin-top: 10px;
+}
+#map {
+    width: 100%;
+    height: 50%;
+}
+.scroll{
+	height: 100%;
+}
+.curved-text{
+	border-radius: 5px !important;
+}
+/* Empty. Add your own CSS if you like */
+.submenu{
+  padding-left: 30px;
+}
+.submenuHead{
+	padding-left: 50px;
+}
+.second-level-menu{
+	padding-left: 60px;
+}
+.welcomeText{
+	position: absolute;
+    height: 100px;
+    width: 110%;
+    background:transparent;
+    margin-top: 20px;
+    padding:20px 30px;
+}
+.welcomeText > .userType::first-letter{
+	text-transform: uppercase;
+}
+.profileImage{
+	width:70px;
+	height:70px;
+	border-radius: 50%;
+	border: 2px solid #FFFFFF;
+	margin-left: -300px;
+}
+.profileDetails{
+	color:#FFFFFF;
+	margin :20px 10px;
+	position: absolute;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.cardHeader{
+	height:35px;
+	width:100%;
+	text-align: left;
+	color:white;
+	padding: 5px 5px;
+}
+.details{
+	position: relative;
+	margin-left:70px;
+}
+.vendorcard{
+	height:90px;
+}
+.green-bg{
+	background-color: #18a689;
+}
+.turquoise-bg{
+	background-color: #009688;
+	color:#FFFFFF;
+}
+.orange-bg{
+	background-color: #f8ac59;
+}
+.dark-orange-bg{
+	background-color: #FF3D00;
+}
+.yellow-bg{
+	background-color: #FFD600;
+}
+.red-bg{
+	background-color: #ed5565;
+}
+.blue-bg{
+	background-color: #23c6c8;
+}
+.lightBlue-bg{
+	background-color: #428bca;
+}
+.card-header{
+	padding-left: 10px;
+	padding-top: 10px;
+	color: white;
+}
+.card-footer{
+	color: #9E9E9E;
+	height: 60px;
+	width: 100%;
+	border-top: 1px solid #EEEEEE;
+	bottom:0px;
+}
+.card-footer > button{
+	font-size: 20px;
+}
+.cardContent{
+	right:0px;
+	padding-right: 10px;
+	color: #FFFFFF;
+}
+.cardContent > label{
+	float: right;
+	font-size: 50px;
+}
+.cardContent > span{
+	float: right;
+	right:25px;
+	font-size: 20px;
+	margin-top: 40px;
+	position: absolute;
+}
+.card-height{
+	min-height: 80px;
+}
+.noticeContent > .details > i{
+	color: grey;
+	font-size:12px;
+	padding-right: 5px;
+}
+.content > .details >i{
+	padding-right: 5px;
+}
+.orange-button{
+	color: white;
+	background-color: #f8ac59;
+	margin-right:10px;
+	margin-bottom: 10px;
+}
+.no-info{
+	font-size:20px;
+	margin-top: 50px;
+}
+.no-info > i{
+	color:#616161;
+}
+.buttonscan{
+	margin:0px auto;
+	width: 300px;
+	height: 220px;
+	background-color: #0D47A1;
+}
+.buttongenerate{
+	background-color: #0D47A1;
+	width:120px;
+	height:50px;
+	margin:0px auto;
+	color: white;
+}
+.amountinfo{
+	padding-top: 150px;
+}
+.dashboard-item1{
+	margin:0px auto;
+	color: white;
+	font-size: 50px;
+}
+.amountinfo1{
+	padding-top: 20px;
+}
+/* Empty. Add your own CSS if you like */
+body{
+	font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+
+}
+.tab{
+	background-color: #1565C0;
+	color: #FFFFFF !important;
+}
+.main-title{
+	font-family: 'Baumans', cursive;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+.sub-title{
+	font-family: 'Baumans', cursive;
+	color: white;
+	font-weight: bold;
+}
+.bar-header{
+	 background-color: #FF9100;
+}
+.avatar-container{
+	width: 100%;
+	top: 0px;
+	margin-left: 0px;
+	margin-top: 5px;
+	background: #FF9100;
+	border: 0px;
+	box-shadow: none;
+	margin-bottom: 0px;
+}
+.avatar-dark-ribbon{
+	background-color: #FF9100;
+	height: 200px;
+	width: 200px;
+	margin: 0px auto;
+	border-radius: 50%;
+	padding: 10px;
+}
+.avatar-light-ribbon{
+	background-color: #FFAB40;
+	height: 180px;
+	width: 180px;
+	margin: 0px auto;
+	border-radius: 50%;
+	padding: 10px;
+}
+.avatar-white-ribbon{
+	background-color: #FFFFFF;
+	height: 160px;
+	width: 160px;
+	margin: 0px auto;
+	border-radius: 50%;
+	padding: 10px;
+}
+.avatar-image{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+.item-icon{
+	position: absolute;
+	left: 20px;
+	color: #1976D2;
+	font-size: 25px;
+	top: 20px;
+}
+.item-details{
+	position: absolute;
+	left: 70px;
+}
+.item-settings{
+	top: 25px;
+}
+.create-element{
+	background-color: #FF4081;
+	color: white;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 80px;
+	right: 20px;
+	outline: none;
+	border: 0px;
+	box-shadow: 2px 2px 2px grey;
+	font-size: 20px;
+	font-weight: bold;
+}
+.ticket-image-container{
+	box-shadow: none;
+	width: 100%;
+	border: 0px;
+	height: 150px;
+	max-height: 150px;
+	padding: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+}
+.ticket-image{
+	height: 100%;
+	width: 100%;
+}
+.ticket-details-container{
+	box-shadow: none;
+	border: 0px;
+	padding: 0px;
+	margin-top: -12px;
+}
+.ticket-title{
+	display: block;
+	border-bottom: 1px solid #F5F5F5;
+}
+.ticket-details{
+	box-shadow: none;
+	border: 0px;
+	height: 40px;
+	margin-top: 20px;
+}
+.timings-container{
+	border: 1px solid #42A5F5;
+	color: #42A5F5;
+	background-color: white;
+	height: 50px;
+	padding: 10px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+.end-time{
+	border: 1px solid red;
+	color: red;
+}
+.thumbnail-img{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+.dashboard-container{
+	box-shadow: none;
+	border: 0px;
+	margin: 0px;
+	width: 100%;
+	padding: 0px;
+	
+}
+.video-item{
+	height: auto;
+	background-color: #FF9100;
+	margin: 5px;
+	padding: 10px;
+}
+.dashboard-item{
+	border-radius: 5px;
+	height: auto;
+	background-color: #FF9100;
+	margin: 5px;
+	padding: 10px;
+}
+.dashboard-item-icon{
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+	color: #01579B;
+	font-size: 50px;
+}
+.dashboard-item-value{
+	display: block;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 5px auto;
+	font-weight: 200;
+}
+.dashboard-item-text{
+	display: block;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 10px auto;
+	font-weight: 200;
+}
+.wallet-image-container{
+	box-shadow: none;
+	border: 0px;
+	padding: 0px;
+	margin-left: 0px;
+	width: 100%;
+	background-color: #1565C0;
+	text-align: center;
+	font-family: 'Roboto',sans-serif;
+	height: 200px;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+.wallet-image{
+	width: 120px;
+	height: 100px;
+	display: block;
+	margin: 0px auto;
+}
+.wallet-text{
+	color: #FFFFFF;
+	font-size: 20px;
+}
+.wallet-history-item-icon{
+	width: 30%;
+	text-align: center;
+	border-right: 1px solid #E0E0E0;
+	padding: 20px;
+	font-size: 20px;
+	color: #1565C0;
+	position: absolute;
+	left: 0px;
+	height: 100px;
+}
+.wallet-history-item-details{
+	margin-left: 30%;
+	padding: 20px;
+	height: 100px;
+	font-size: 12px;
+}
+.wallet-history-details-item{
+	display: block;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.wallet-history-details-item-value{
+	color: #FFFFFF;
+	text-transform: none;
+}
+.wallet-history-item-footer{
+	border-top: 1px solid #E0E0E0;
+	padding-left: 20px;
+	padding-top: 10px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.ticket-history-item-icon{
+	width: 30%;
+	text-align: center;
+	border-right: 1px solid #E0E0E0;
+	padding: 20px;
+	font-size: 20px;
+	color: #1565C0;
+	position: absolute;
+	left: 0px;
+	height: 120px;
+}
+.ticket-history-item-details{
+	margin-left: 30%;
+	padding: 20px;
+	height: 120px;
+	font-size: 12px;
+}
+.ticket-history-details-item{
+	display: block;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.ticket-history-details-item-value{
+	color: #FFFFFF;
+	text-transform: none;
+}
+.ticket-history-item-footer{
+	border-top: 1px solid #E0E0E0;
+	padding-left: 20px;
+	padding-top: 10px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.register-content{
+	background-color: #FFFFFF;
+    width: 100%;
+    height: 110%;
+}
+.sign-in-button{
+	text-transform: uppercase;
+	color: white;
+}
+.shadow-button{
+	box-shadow: 2px 2px 2px grey;
+	color: blue;
+	text-decoration: none !important;
+	border: 1px solid #E0E0E0
+}
+.center-box-logo{
+	margin: 30px auto;
+	background: transparent;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+.error-item{
+	border-bottom: 1px solid red !important;
+}
+.error-info{
+	color: red;
+	font-size: 12px;
+}
+.center-box-logo > h1{
+	color:#455A64;
+}
+.center-box-logo img{
+	width: 80px;
+	height: 80px;
+}
+.center-box-grey{
+	margin: 0px auto;
+	background: transparent;
+	box-shadow: none;
+	padding: 10px 30px 30px 30px;
+}
+.form-item{
+	background:transparent;
+	text-align:center;
+	padding: 0px;
+	padding-top: 10px;
+	border-bottom: 1px solid grey !important;
+	border-top: 0px;
+}
+.form-item > .fa{
+	font-size: 25px;
+	padding-right: 10px;
+	color: #455A64;
+}
+input.form-input{
+	display:inline-block !important;
+	width:60%;
+	background-color:transparent;
+	color:#455A64;
+}
+.info-para{
+	color: #455A64;
+}
+.main-footer{
+	background: transparent;
+	text-align: center;
+	color: white;
+}
+.main-footer > div{
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	font-size: 5px;
+}
+.otp{
+	display: inline-block;
+	margin: 5px;
+	border: 1px solid #9E9E9E;
+}
+.otp-list{
+	text-align: center;
+}
+.otp-input{
+	width:50px;
+	border:10px solid rgba(0,0,0,0.5);
+	display: block;
+	text-align: center;
+}
+.settings-card{
+	padding: 25px;
+	height: 180px;
+	text-align: center;
+	margin: 0px;
+	color: white;
+	border-radius: 0px;
+	background: blue;
+  	background: -webkit-radial-gradient(circle, #80CBC4, #009688, #00659C);
+  	background: -o-radial-gradient(circle, #80CBC4, #009688, #00659C);
+  	background: -moz-radial-gradient(circle, #80CBC4, #009688, #00659C);
+  	background: radial-gradient(circle, #80CBC4, #009688, #00659C);
+}
+.settings-card > img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 4px solid white;
+	display: block;
+	margin: 0px auto;
+}
+.main-card{
+	padding: 0px !important;
+}
+.info{
+	color: blue;
+}
+.slider-pager-page > i{ 
+	font-size: 12px !important;
+	margin-top: 10px;
+}
+#map {
+    width: 100%;
+    height: 50%;
+}
+.scroll{
+	height: 100%;
+}
+.curved-text{
+	border-radius: 5px !important;
+}
+/* Empty. Add your own CSS if you like */
+.submenu{
+  padding-left: 30px;
+}
+.submenuHead{
+	padding-left: 50px;
+}
+.second-level-menu{
+	padding-left: 60px;
+}
+.welcomeText{
+	position: absolute;
+    height: 100px;
+    width: 110%;
+    background:transparent;
+    margin-top: 20px;
+    padding:20px 30px;
+}
+.welcomeText > .userType::first-letter{
+	text-transform: uppercase;
+}
+.profileImage{
+	width:70px;
+	height:70px;
+	border-radius: 50%;
+	border: 2px solid #FFFFFF;
+	margin-left: -300px;
+}
+.profileDetails{
+	color:#FFFFFF;
+	margin :20px 10px;
+	position: absolute;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.cardHeader{
+	height:35px;
+	width:100%;
+	text-align: left;
+	color:white;
+	padding: 5px 5px;
+}
+.details{
+	position: relative;
+	margin-left:70px;
+}
+.vendorcard{
+	height:90px;
+}
+.green-bg{
+	background-color: #18a689;
+}
+.turquoise-bg{
+	background-color: #009688;
+	color:#FFFFFF;
+}
+.orange-bg{
+	background-color: #f8ac59;
+}
+.dark-orange-bg{
+	background-color: #FF3D00;
+}
+.yellow-bg{
+	background-color: #FFD600;
+}
+.red-bg{
+	background-color: #ed5565;
+}
+.blue-bg{
+	background-color: #23c6c8;
+}
+.lightBlue-bg{
+	background-color: #428bca;
+}
+.card-header{
+	padding-left: 10px;
+	padding-top: 10px;
+	color: white;
+}
+.card-footer{
+	color: #9E9E9E;
+	height: 60px;
+	width: 100%;
+	border-top: 1px solid #EEEEEE;
+	bottom:0px;
+}
+.card-footer > button{
+	font-size: 20px;
+}
+.cardContent{
+	right:0px;
+	padding-right: 10px;
+	color: #FFFFFF;
+}
+.cardContent > label{
+	float: right;
+	font-size: 50px;
+}
+.cardContent > span{
+	float: right;
+	right:25px;
+	font-size: 20px;
+	margin-top: 40px;
+	position: absolute;
+}
+.card-height{
+	min-height: 80px;
+}
+.noticeContent > .details > i{
+	color: grey;
+	font-size:12px;
+	padding-right: 5px;
+}
+.content > .details >i{
+	padding-right: 5px;
+}
+.orange-button{
+	color: white;
+	background-color: #f8ac59;
+	margin-right:10px;
+	margin-bottom: 10px;
+}
+.no-info{
+	font-size:20px;
+	margin-top: 50px;
+}
+.no-info > i{
+	color:#616161;
+}
+.main-header {
+	text-align: left;
+}
+/*img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}*/
+.background-img{
+	opacity: 0.2;
+    filter: alpha(opacity=50);
+}
+@media screen and (orientation: portrait) {
+  .toolbar {
+    width: 100%;
+  }
+}
+
+/* For landscape, we want the tool bar stick on the left */
+
+@media screen and (orientation: landscape) {
+  .toolbar {
+    position: fixed;
+    width: 2.65em;
+    height: 100%;
+  }
+
+.mycard{
+	height: 1500px;
+	width: 100%;
+ }
+
+ .title.title-center.header-item {
+        background-color:#F38023!important; // for bg color
+        margin:0px!important;
+        margin-left:0px!important;
+        color: #ffffff!important;
+        width: 100%;
+    }

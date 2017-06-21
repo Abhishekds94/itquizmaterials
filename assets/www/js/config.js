@@ -1,0 +1,6 @@
+var DEV_MODE = 1;
+var SUCCESS_STATUS_TEXT = "SUCCESS";
+var FAILURE_STATUS_TEXT = "FAILURE";
+var DEV_URL = 'http://192.168.1.4:8001/';
+var BASE_URL = "";
+var DEBUG_MODE = 1;

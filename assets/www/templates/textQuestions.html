@@ -1,0 +1,645 @@
+<ion-view view-title="Dash" align-title="left">
+  <ion-nav-title>
+    <span class="main-title"><a style="text-decoration: none;" href="#/app/dash"><i class="fa fa-arrow-left" aria-hidden="true"></i>Home</a></span>
+  </ion-nav-title>
+   <ion-nav-bar class="bar-positive custom-dark">
+    <!-- <ion-nav-buttons side="left">
+    <a href="#/app/dash"><i class="fa fa-2x fa-angle-left" style="color: #FFFFFF"></i></a>
+    </ion-nav-buttons> -->
+  </ion-nav-bar>
+<!-- background-image:url(img/bgImage1.jpg);opacity: 2 -->
+  	<ion-content  style="background-color:#424242;">
+      <div class="card" style="background-color:#424242;box-shadow: none;" ng-init="textChanged()">
+        <div class="card " style="box-shadow: none; text-align:center;padding:10px;background-color:#FFFFFF;">
+          <div ng-if='textCount == 1'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Who is the founder of Apple?</h4>
+          </div>
+          <div ng-if='textCount == 1' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align: center;">Answer - Steve Jobs</p></h4>
+          </div>
+          <div ng-if='textCount == 2'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) What is a Software which is specifically designed to disrupt or damage a computer system?</h4>
+          </div>
+          <div ng-if='textCount == 2' id="showDetails" ng-hide="showMoreDetails" c44lass="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Malware</p></h4>
+          </div>
+          <div ng-if='textCount == 3'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Microsoft Office assistants had a character named Will named after which famous English playwright?</h4>
+          </div>
+          <div ng-if='textCount == 3' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - William Shakesphere</p></h4>
+          </div>
+          <div ng-if='textCount == 4'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) What is the continual broadcast of events in a person's life through digital media, typically transmitted through the medium of the Internet and wearable technology called?</h4>
+          </div>
+          <div ng-if='textCount == 4' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Lifecasting</p></h4>
+          </div>
+          <div ng-if='textCount == 5'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) The Economist's Science and Technology blog is named after which English inventor, who was the Professor of Mathematics at Cambridge from 1828 to 1839?</h4>
+          </div>
+          <div ng-if='textCount == 5' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Charles Babbage</p></h4>
+          </div>
+          <div ng-if='textCount == 6'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) As a response to Japan's 2011 devastating earthquake employees at NHN Corp developed which instant communications app that led to a spinoff company named after the app?</h4>
+          </div>
+           <div ng-if='textCount == 6' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Line</p></h4>
+          </div>
+          <div ng-if='textCount == 7'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) In 1991 who co-authored a book 'The Japan That Can Say No' with politician Shintaro Ishihara, where they criticized American business practices?</h4>
+          </div>
+           <div ng-if='textCount == 7' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Akio Morita</p></h4>
+          </div>
+          <div ng-if='textCount == 8'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which Facebook co-founder is the CEO of Asana, a web and mobile application designed to enable teamwork without email?
+            </h4>
+          </div>
+           <div ng-if='textCount == 8' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;"44>
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Dustin Moskovitz</p></h4>
+          </div>
+          <div ng-if='textCount == 9'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) What replaced Internet Explorer as the default browser of Windows 10 PCs, smartphones and tablets? 
+            </h4>
+          </div>
+           <div ng-if='textCount == 9' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Microsoft Edge</p></h4>
+          </div>
+          <div ng-if='textCount == 10'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Richard Stallman quit his MIT job in January 1984 and began writing a software and when he wanted to name it, he took a hacker's recursive naming tradition. He named it GNU. G stood for GNU, N stood for Not. What did the 'U' stand for? </h4>
+          </div>
+           <div ng-if='textCount == 10' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Unix</p></h4>
+          </div>
+          <div ng-if='textCount == 11'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) From March 30th 2015, all of Sony's smartphones, tablets and PS3 and PS4 consoles will stream music in their devices powered by which Swedish company?</h4>
+          </div>
+           <div ng-if='textCount == 11' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Spotify</p></h4>
+          </div>
+          <div ng-if='textCount == 12'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Launched in 2000, the Ericsson T36 adopted a new technology with the proposed names 'Biz-RF', 'MC-Link' and 'Low Power-RF', but was finally named after the code name of the project. How do we know the project?</h4>
+          </div>
+           <div ng-if='textCount == 12' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Bluetooth</p></h4>
+          </div>
+          <div ng-if='textCount == 13'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which multinational corporation owns the domain names 'Live.com', 'Office.com' and 'Beautyoftheweb.com', which was used to release their updated browser in 2010?</h4>
+          </div>
+           <div ng-if='textCount == 13' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Microsoft</p></h4>
+          </div>
+          <div ng-if='textCount == 14'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) 'Love' with 696 million posts is the most followed. 'Me' with 297 million posts is third and 'tbt' with 272 million is fourth in the list. Which website has these statistics?</h4>
+          </div>
+           <div ng-if='textCount == 14' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Instagram</p></h4>
+          </div>
+          <div ng-if='textCount == 15'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which Harvard graduates pair once owned 1% of all Bitcoins mined in the world, have a Bitcoin tracking index named after their surname and also a company called 'Gemini'?</h4>
+          </div>
+           <div ng-if='textCount == 15' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Winklevoss Twins</p></h4>
+          </div>
+          <div ng-if='textCount == 16'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) The new logo unveiled in 2012 represents Microsoft's four major products: blue is Windows, red is Office, green is Xbox. What is yellow?</h4>
+          </div>
+           <div ng-if='textCount == 16' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Bing</p></h4>
+          </div>
+          <div ng-if='textCount == 17'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which term can be characterized by 3 V's: Volume, Variety and Velocity, and is often used when speaking about petabytes and exabytes that cannot be integrated easily? </h4>
+          </div>
+           <div ng-if='textCount == 17' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Big Data</p></h4>
+          </div>
+          <div ng-if='textCount == 18'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which device is used to convert digital signals to analog and vice versa and its name was coined in 1958 using the terms modulator and demodulator?</h4>
+          </div>
+           <div ng-if='textCount == 18' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Modem</p></h4>
+          </div>
+          <div ng-if='textCount == 19'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) 'Simple, beautiful, ad-free' is the tagline of which social network created by Paul Budnitz and Todd Berger in March 2014?</h4>
+          </div>
+           <div ng-if='textCount == 19' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Ello</p></h4>
+          </div>
+          <div ng-if='textCount == 20'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which sportsperson has invested in London based startup Sport Convo, a social media hub for discussing anything related to sports and also for sharing sporting news and features?</h4>
+          </div>
+           <div ng-if='textCount == 20' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Virat Kohli</p></h4>
+          </div>
+          <div ng-if='textCount == 21'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) In June 2014, Nepal became the first textCountry in the world to use which product for its Gurkha Military operations to track animals and birds in the jungle, saving them from poachers?</h4>
+          </div>
+           <div ng-if='textCount == 21' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Google Glass</p></h4>
+          </div>
+           <div ng-if='textCount == 22'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which company started in 1922 by Vannevar Bush, Laurence Marshall and Charles G. Smith was named after 'The light of Gods', built the computer that guided the space vehicles in their journey in the 1969 Lunar Landing Apollo mission?</h4>
+          </div>
+           <div ng-if='textCount == 22' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Raytheon</p></h4>
+          </div>
+           <div ng-if='textCount == 23'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which term borrows from a term for fashionable people called Glitterati; and defines an active group of internet users with large numbers of followers and daily involvement?</h4>
+          </div>
+           <div ng-if='textCount == 23' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Twitterati</p></h4>
+          </div>
+           <div ng-if='textCount == 24'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) What computer term meaning 'A sweet biscuit' is a packet of data sent by an Internet server to a browser, which is returned by the browser each time it accesses the same server?</h4>
+          </div>
+           <div ng-if='textCount == 24' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Cookie</p></h4>
+          </div>
+           <div ng-if='textCount == 25'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Denoting an outstanding or supreme example of a particular kind of person or thing, which San Francisco based company takes its name for the German word for 'over'?</h4>
+          </div>
+           <div ng-if='textCount == 25' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Uber</p></h4>
+          </div>
+           <div ng-if='textCount == 26'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) The name of which website with close to 16 billion page views and 500 million unique visitors each month was coined by Larry Sanger as a combination of two words meaning 'Quick' and 'All round Education'?</h4>
+          </div>
+           <div ng-if='textCount == 26' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Wikipedia</p></h4>
+          </div>
+           <div ng-if='textCount == 27'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) PayTM, the flagship product of One97 communications was launched in 2010 as the largest company in its category. The name PayTM stands for. Pay _____ _______. What does TM stand for?</h4>
+          </div>
+           <div ng-if='textCount == 27' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Through Mobile</p></h4>
+          </div>
+           <div ng-if='textCount == 28'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which poor woodcutter known for his phrase 'Open Sesame' shares his name with a Chinese E-commerce giant?</h4>
+          </div>
+           <div ng-if='textCount == 28' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Alibaba</p></h4>
+          </div>
+           <div ng-if='textCount == 29'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which German multinational built the first long-distance telegraph line in Europe stretching over 500 kms in 1848?</h4>
+          </div>
+           <div ng-if='textCount == 29' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Siemens</p></h4>
+          </div>
+           <div ng-if='textCount == 30'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which modern technology company had its origins in April 1959 with a capital of 3 million yen as a fine ceramic company in Kyoto called Kyoto Ceramics?</h4>
+          </div>
+           <div ng-if='textCount == 30' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Kyocera</p></h4>
+          </div>
+           <div ng-if='textCount == 31'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which celebrity became the first Indian to cross 1 million follower mark on Twitter?</h4>
+          </div>
+           <div ng-if='textCount == 31' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - A R Rahman</p></h4>
+          </div>
+           <div ng-if='textCount == 32'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which site makes users copy another person’s photos and put them on instagram as their own?</h4>
+          </div>
+           <div ng-if='textCount == 32' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Insta Slash</p></h4>
+          </div>
+           <div ng-if='textCount == 33'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) nexGTv is a mobile application, which provides access to live TV channels and video on demand on handsets. This app allowed people to watch videos of one of the largest events in human history this year. Which event?</h4>
+          </div>
+           <div ng-if='textCount == 33' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Maha Kumbh Mela</p></h4>
+          </div>
+           <div ng-if='textCount == 34'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Which famous company did Sanjay Mehrotra form, headquartered at Milpitas, california, this company produces what are today known as pendrives?</h4>
+          </div>
+           <div ng-if='textCount == 34' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Sandisk</p></h4>
+          </div>
+           <div ng-if='textCount == 35'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) We all say Giga bye. Now this is 10 to power how much?</h4>
+          </div>
+           <div ng-if='textCount == 35' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - 9</p></h4>
+          </div>
+           <div ng-if='textCount == 36'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) In the world of books what is the full form of ISBN?</h4>
+          </div>
+           <div ng-if='textCount == 36' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - International Standard Book Number</p></h4>
+          </div>
+           <div ng-if='textCount == 37'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) Sometimes advertisements on the net have virus in them,that is you might think it is a genuine ad but in real it is a virus. identify this term</h4>
+          </div>
+           <div ng-if='textCount == 37' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Mal Advertising</p></h4>
+          </div>
+           <div ng-if='textCount == 38'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) TCS has been in the news due to its acquisition of a French Technology services company for over 75 million euro. Name the company?</h4>
+          </div>
+           <div ng-if='textCount == 38' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - ALTI SA</p></h4>
+          </div>
+           <div ng-if='textCount == 39'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) What is Samsung's answer to Siri?</h4>
+          </div>
+           <div ng-if='textCount == 39' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - S Voice</p></h4>
+          </div>
+          <div ng-if='textCount == 40'>
+            <h4 style="color:#000000;text-align:center;">{{textCount}}) In the domain extension .com what does com actually stands for?</h4>
+          </div>
+          <div ng-if='textCount == 40' d="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Commercial</p></h4>
+          </div>
+          <div ng-if='textCount == 41'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) It is a multinational networking and telecommunications equipment and services company headquartered in Stockholm, Sweden. It’s logo consists of Three Horizontal Lines.Which company ?</h4>
+          </div>
+          <div ng-if='textCount == 41' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Ericsson</p></h4>
+          </div>
+          <div ng-if='textCount == 42'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) What is this device called: it was used to watch movies nearly 15-20 years back,it was big than today’s CD roms?</h4>
+          </div>
+          <div ng-if='textCount == 42' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - VCR</p></h4>
+          </div>
+          <div ng-if='textCount == 43'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) What is Mozilla's online paying application called?</h4>
+          </div>
+          <div ng-if='textCount == 43' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Mozpay</p></h4>
+          </div>
+          <div ng-if='textCount == 44'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Mozilla and which famous Korean telecom giant is collaborating to produce Mozilla's next generation web browser SERVO?</h4>
+          </div>
+          <div ng-if='textCount == 44' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Samsung</p></h4>
+          </div>
+          <div ng-if='textCount == 45'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Susan Bennet, Jon Briggs , Karen Jacobsen all under the names Samantha, Daniel and Karen are famous for what?</h4>
+          </div>
+          <div ng-if='textCount == 45' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Apple Siri</p></h4>
+          </div>
+          <div ng-if='textCount == 46'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which app was known as Picaboo and was developed by Evan Spiegel?</h4>
+          </div>
+          <div ng-if='textCount == 46' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Snapchat</p></h4>
+          </div>
+          <div ng-if='textCount == 47'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which browser, developed by Norway-based Telenor, was started in 1994 and shares its name with a dramatic art form performed by singers?</h4>
+          </div>
+          <div ng-if='textCount == 47' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Opera</p></h4>
+          </div>
+          <div ng-if='textCount == 48'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which children’s television channel hosts all its content on nick.com and was previously known as Pinwheel?</h4>
+          </div>
+          <div ng-if='textCount == 48' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Nickelodeon</p></h4>
+          </div>
+          <div ng-if='textCount == 49'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which movie shows robots as sentient beings which come back in the 21st century to control humans?</h4>
+          </div>
+          <div ng-if='textCount == 49' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - The Matrix</p></h4>
+          </div>
+          <div ng-if='textCount == 50'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which movie, directed by David Fincher, starred the now-famous Jesse Eisenberg as Mark Zuckerberg and was about the development of Facebook?</h4>
+          </div>
+          <div ng-if='textCount == 50' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - The Social Network</p></h4>
+          </div>
+          <div ng-if='textCount == 51'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) 'Jeh’ is a book by Bakhtiar J. Dadabhoy.About which founder of TCS , the book is about ?</h4>
+          </div>
+          <div ng-if='textCount == 51' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - J R D Tata</p></h4>
+          </div>
+          <div ng-if='textCount == 52'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) We all know about Apple. What was Mango with respect to the world of mobiles?</h4>
+          </div>
+          <div ng-if='textCount == 52' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Microsoft Windows Phone OS</p></h4>
+          </div>
+          <div ng-if='textCount == 53'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which word originally means ' a spirit of harmless,creative,Fun'. Which now have a reverse meaning in the internet world ?</h4>
+          </div>
+          <div ng-if='textCount == 53' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Hack</p></h4>
+          </div>
+          <div ng-if='textCount == 54'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) What is the full-form of the famous company AMD?</h4>
+          </div>
+          <div ng-if='textCount == 54' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Advanced Micro Devices</p></h4>
+          </div>
+          <div ng-if='textCount == 55'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Name the company which was founded by Toshio Lue and owned by Panasonic whose name means 'Three Oceans'. Because they want to spread their products across Pacific, Atlantic and Indian ocean</h4>
+          </div>
+          <div ng-if='textCount == 55' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Sanyo</p></h4>
+          </div>
+          <div ng-if='textCount == 56'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) In HTTP , if HT stands for Hypertext . Then what does TP stands for ?</h4>
+          </div>
+          <div ng-if='textCount == 56' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Transfer Protocol</p></h4>
+          </div>
+          <div ng-if='textCount == 57'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) If 'The Everything Store' is a book about Amazon. Then 'The perfect Store' is about ?</h4>
+          </div>
+          <div ng-if='textCount == 57' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - eBay</p></h4>
+          </div>
+          <div ng-if='textCount == 58'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which company manufactured the first smartphone Simon ?</h4>
+          </div>
+          <div ng-if='textCount == 58' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - IBM</p></h4>
+          </div>
+          <div ng-if='textCount == 59'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) The startup is supported by Rocket Internet , a global mobile food delivery marketplace . In some other textCountries this service is called 'hellofood'. Which company are we talking about ?</h4>
+          </div>
+          <div ng-if='textCount == 59' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Foodpanda</p></h4>
+          </div>
+          <div ng-if='textCount == 60'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) On April 1 , 2004. Google introduced something offering 1 GB which all the people thought as an April Fools prank because the competitors on this field were giving only 2 MB , 4MB etc . Which service ?</h4>
+          </div>
+          <div ng-if='textCount == 60' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Gmail</p></h4>
+          </div>
+          <div ng-if='textCount == 61'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Yandex is a service from which textCountry ?</h4>
+          </div>
+          <div ng-if='textCount == 61' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Russia</p></h4>
+          </div>
+          <div ng-if='textCount == 62'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which game , called CoD as short have the series of games such as 'Modern Warfare, Black Ops , Ghosts and Advanced Warfare' ?</h4>
+          </div>
+          <div ng-if='textCount == 62' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Call of Duty</p></h4>
+          </div>
+          <div ng-if='textCount == 63'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) .tr is the TLD of which textCountry ?</h4>
+          </div>
+          <div ng-if='textCount == 63' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Turkey</p></h4>
+          </div>
+          <div ng-if='textCount == 64'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) On National Technology Day , 2015 . Which Kochin based incubator won the award for Best technology incubator in India ?</h4>
+          </div>
+          <div ng-if='textCount == 64' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Startup Village Cochin</p></h4>
+          </div>
+          <div ng-if='textCount == 65'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which simple word first used on 29th July 1985 by Apple for programming tools was named 2010’s Word Of The Year by American Dialect Society?</h4>
+          </div>
+          <div ng-if='textCount == 65' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - App</p></h4>
+          </div>
+          <div ng-if='textCount == 66'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) The name of which company co-founded by George Canova was suggested by his wife as she mistakenly thought this word meant “New” in French?</h4>
+          </div>
+          <div ng-if='textCount == 66' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Novell</p></h4>
+          </div>
+          <div ng-if='textCount == 67'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Chief architect Mark Reinhold tweets “Readability, Simplicity, Universality & Compatibility. The keys to ____’s strong history & bright future.” On the 20th anniversary by James Gosling, his creation whichhe wanted to call to call Oak?</h4>
+          </div>
+          <div ng-if='textCount == 67' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Java</p></h4>
+          </div>
+          <div ng-if='textCount == 68'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) They make wearable devices for kids. Which company?</h4>
+          </div>
+          <div ng-if='textCount == 68' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Walt Disney</p></h4>
+          </div>
+          <div ng-if='textCount == 69'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) The patent of what reads as follows “A system that provides a periodically changing storyline & or a special event company logo to entice users to access a web page.”?</h4>
+          </div>
+          <div ng-if='textCount == 69' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Doodle</p></h4>
+          </div>
+          <div ng-if='textCount == 70'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Holding a rank equivalent to an Indian Cabinet Minister who is the advisor to The Prime Minister Of India, a member of the National Council on Skill Development & also the Chairman of Bombay Stock Exchange.</h4>
+          </div>
+          <div ng-if='textCount == 70' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - S Ramadorai</p></h4>
+          </div>
+          <div ng-if='textCount == 71'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Who has been called the “Father Of WiFi” because he chaired the IEEE committee which created the 802.11 standard in 1997?</h4>
+          </div>
+          <div ng-if='textCount == 71' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Vic Hayes</p></h4>
+          </div>
+          <div ng-if='textCount == 72'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which is the world’s first completely open video game console which was an idea of Julie Uhrman &designed by Yves Behar?</h4>
+          </div>
+          <div ng-if='textCount == 72' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Ouya</p></h4>
+          </div>
+          <div ng-if='textCount == 73'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Company started by Goro Yoshida & his brother in law Saburo Uchida as Precision Optical Instruments Laboratory in Japan had a logo of Buddhist Bodhisatva</h4>
+          </div>
+          <div ng-if='textCount == 73' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Canon</p></h4>
+          </div>
+          <div ng-if='textCount == 74'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) In 2011, which iconic technology behemoth celebrated its centenary with the book titled ‘Making the World Work Better – The Ideas that shaped a century & a company’</h4>
+          </div>
+          <div ng-if='textCount == 74' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - IBM</p></h4>
+          </div>
+          <div ng-if='textCount == 75'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Bill Gates wrote his first program for which paper & pencil game popular amongst the students?</h4>
+          </div>
+          <div ng-if='textCount == 75' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Tic Tac Toe</p></h4>
+          </div>
+          <div ng-if='textCount == 76'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) This is a child tracking system from the Odisha Primary Education Programme Authority (OPEPA) to track children by demographic, educational and physical status.What is it ?</h4>
+          </div>
+          <div ng-if='textCount == 76' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - e-Sishu</p></h4>
+          </div>
+          <div ng-if='textCount == 77'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) It is the practice of raising monetary contributions from a large number of people, typically via the internet.What is it called ?</h4>
+          </div>
+          <div ng-if='textCount == 77' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Crowd Funding</p></h4>
+          </div>
+          <div ng-if='textCount == 78'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) This game, created by Taneli Armanto in 1997, only existed on Nokia phones till May 2015 when it was released for ios, android and windows phone.Which game ?</h4>
+          </div>
+          <div ng-if='textCount == 78' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Snake</p></h4>
+          </div>
+          <div ng-if='textCount == 79'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) The principle that Internet service providers should enable access to all content and applications regardless of the source, and without favoring or blocking particular products or websites.What ?</h4>
+          </div>
+          <div ng-if='textCount == 79' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Net Neutrality</p></h4>
+          </div>
+          <div ng-if='textCount == 80'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) The Huffington Post which launched in India as huffingtonpost.in has partnered up with which Indian media company?</h4>
+          </div>
+          <div ng-if='textCount == 80' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Times Group</p></h4>
+          </div>
+          <div ng-if='textCount == 81'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which textCountry has the fastest internet speed?</h4>
+          </div>
+          <div ng-if='textCount == 81' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - South Korea</p></h4>
+          </div>
+          <div ng-if='textCount == 82'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) This Chinese company was the the world's No. 1 applicant for international patents in 2014. It started off in 1987 as a company selling telephone exchange switches. It plays a major role in internet connectivity in India.Which company ?</h4>
+          </div>
+          <div ng-if='textCount == 82' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Huawei</p></h4>
+          </div>
+          <div ng-if='textCount == 83'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) It is a method of acquiring sensitive information such as usernames, passwords,and credit card details, often for malicious reasons, by masquerading as a trustworthy entity in an electronic communication.What?</h4>
+          </div>
+          <div ng-if='textCount == 83' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Phishing</p></h4>
+          </div>
+          <div ng-if='textCount == 84'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which IT company headquartered in Palo Alto, California has a product line which includes Envy, Deskjet and Laserjet as some of its most famous products</h4>
+          </div>
+          <div ng-if='textCount == 84' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - HP</p></h4>
+          </div>
+          <div ng-if='textCount == 85'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) What was founded in 2009 by Brian Acton and Jan Koum, former employees of Yahoo!</h4>
+          </div>
+          <div ng-if='textCount == 85' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Whatsapp</p></h4>
+          </div>
+          <div ng-if='textCount == 86'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) This company was started when General Electric asked Arthur Andersen to automate payroll processing and manufacturing at GE's Appliance Park facility. It was formerly named Anderson Consulting.</h4>
+          </div>
+          <div ng-if='textCount == 86' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Accenture</p></h4>
+          </div>
+          <div ng-if='textCount == 87'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which Rockstar game was developed by David Jones and Mike Daily ?</h4>
+          </div>
+          <div ng-if='textCount == 87' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - GTA Vice City</p></h4>
+          </div>
+          <div ng-if='textCount == 88'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) This company was founded in July 2003 by Martin Eberhard and Marc Tarpenning. It is named after a Serbian-American inventor.Which company ?</h4>
+          </div>
+          <div ng-if='textCount == 88' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Tesla Motors</p></h4>
+          </div>
+          <div ng-if='textCount == 89'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Named as word of the year 2009, it means to remove friends on social networking website. What word?</h4>
+          </div>
+          <div ng-if='textCount == 89' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Unfriend</p></h4>
+          </div>
+          <div ng-if='textCount == 90'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which e-commerce giant owns Junglee.com?</h4>
+          </div>
+          <div ng-if='textCount == 90' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Amazon</p></h4>
+          </div>
+          <div ng-if='textCount == 91'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Buddy is a mobile wallet launched by which bank? </h4>
+          </div>
+          <div ng-if='textCount == 91' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - State Bank of India</p></h4>
+          </div>
+          <div ng-if='textCount == 92'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) MasterCraft is a brand that contains a suite of products that help project delivery teams to optimize their services by which company?</h4>
+          </div>
+          <div ng-if='textCount == 92' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - TCS</p></h4>
+          </div>
+          <div ng-if='textCount == 93'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) What are VISUMEs ?
+                </h4>
+          </div>
+          <div ng-if='textCount == 93' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Video Resumes</p></h4>
+          </div>
+          <div ng-if='textCount == 94'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Yoga – an ultra-book series was launched by which Chinese company founded in 1984?</h4>
+          </div>
+          <div ng-if='textCount == 94' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Lenovo</p></h4>
+          </div>
+          <div ng-if='textCount == 95'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Which online retailer owned by Flipkart raise $50M funding & also few private investors in Feb 2014?</h4>
+          </div>
+          <div ng-if='textCount == 95' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Myntra</p></h4>
+          </div>
+          <div ng-if='textCount == 96'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) 'The Road ahead' is a book by ?</h4>
+          </div>
+          <div ng-if='textCount == 96' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Bill Gates</p></h4>
+          </div>
+          <div ng-if='textCount == 97'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Running on Flare3D game engine by Zynga, which farming simulation game by Zynga was launched in 2011,with a sequel launched in 2012?</h4>
+          </div>
+          <div ng-if='textCount == 97' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Farmville</p></h4>
+          </div>
+          <div ng-if='textCount == 98'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) Alan Eustace broke Felix Baumgartner’s record for the highest altitude free fall who also served as VP of this tech giant. Identify</h4>
+          </div>
+          <div ng-if='textCount == 98' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Google</p></h4>
+          </div>
+          <div ng-if='textCount == 99'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) The name of which series of phone has meaning ‘Snow’ in Finnish?</h4>
+          </div>
+          <div ng-if='textCount == 99' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Lumia</p></h4>
+          </div>
+          <div ng-if='textCount == 100'>
+                <h4 style="color:#000000;text-align:center;">{{textCount}}) ____________ is a multinational headquartered in Kyoto, Japan. It was founded as Kyoto Ceramic Company,Limited in 1959 by Kazuo Inamori and renamed in 1982 ?</h4>
+          </div>
+          <div ng-if='textCount == 100' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Kyocera</p></h4>
+          </div>
+          <div ng-if='textCount == 101'>
+                <h3 style="color:#000000;text-align:center;">Thank You...</h3>
+          </div>
+      </div>
+         <div id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:center;padding-top:10px;padding-bottom:10px;" ng-if="textCount!=101">
+              <button class="button button-outline button-light" type="button" ng-click="toggleInfoButtons()" style="background-color:#FFFFFF;">
+              <h4 style="color:#000000">HIDE ANSWER</h4></button>
+          </div>
+          <div id="hideDetails" ng-show="showMoreDetails" class="colorBlue" style="text-align:center;padding-top:10px;padding-bottom:10px;" ng-if="textCount!=101">
+              <button class="button button-outline button-light " type="button" ng-click="toggleInfoButtons()" style="background-color:#FFFFFF;">
+              <h4 style="color:#000000">VIEW ANSWER</h4></button>
+          </div>
+          <!-- <div style="color:#FFFFFF;text-align:right">
+            <i class="fa fa-2x fa-arrow-circle-o-right"></i>
+          </div> -->
+          <span class="row" style="text-align:center;margin:auto">
+            <i class="fa fa-2x fa-arrow-circle-o-left" style="color:#FFFFFF;" ng-click="decreaseTextCount()" ng-if='textCount>1'></i>
+            <p style="color:#FFFFFF;padding-left:48%" ng-if="textCount==1"><b>{{textCount}}</b></p>
+            <p style="color:#FFFFFF;padding-left:39%" ng-if="textCount>1 && textCount<101"><b>{{textCount}}</b></p>
+            <i class="fa fa-2x fa-arrow-circle-o-right" style="color:#FFFFFF;margin-left: 130px;" ng-click="increaseTextCount()" ng-if='textCount<101'></i>
+          </span>
+          <br />
+          <div class="row" style="margin-left: 90px;text-align: center;">
+            <input ng-model="textKeyValue"  size="3" type="tel" maxlength="3" name="textCount" id="textCount">
+            <button ng-click="textKeyChange(textKeyValue)">Go to Question</button>
+          </div>
+      </div>
+  	</ion-content>
+</ion-view>

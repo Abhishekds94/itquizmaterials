@@ -1,0 +1,47 @@
+<ion-view view-title="Dash" align-title="left">
+  <ion-nav-title>
+    <span class="main-title">IT Quiz Materials</span>
+  </ion-nav-title>
+  <ion-nav-bar  class="bar bar-header bar-positive">
+    <ion-nav-buttons side="left">
+    <img src="img/quizLogo.png" height="30" width="40" style="border-radius:10%;">
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-nav-view name="menuContent"></ion-nav-view>
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- admob -->
+    <script src="js/angular-admob.js"></script>
+</head>
+<body ng-app="starter" ng-controller="DashController">
+  
+<!-- background-image:url(img/bgImage5.jpeg);opacity: 2 -->
+    <ion-content  style="background-color:#424242;">
+      <div style="color:#FFFFFF;text-align:center;padding-bottom: 40px;padding-top: 60px;">
+        <h3 style="color:#FFFFFF;text-align: center;">Welcome to IT Quiz Materials</h3>
+        <img src="img/quizLogo.png" height="80" width="80" style="">  
+      </div>
+      <div class="card row" style="text-align:left;padding:25px;background-color:transparent;" ng-click="goToTextQuestions()">
+        <i style="color:#FFFFFF;padding-top: 5px;" class="fa fa-2x fa-file-text-o" ></i>
+        <h4 style="color:#FFFFFF;padding-left: 10px;">Text Questions</h4>
+      </div>
+      <br />
+      <div class="card row" style="text-align:left;padding:25px;background-color:transparent;" ng-click="goToImageQuestions()">  
+        <i  style="color:#FFFFFF;padding-top: 5px;" class="fa fa-2x fa-picture-o" ></i>
+        <h4 style="color:#FFFFFF;padding-left:10px;">Image Questions</h4>
+      </div>
+    <!-- <div class="row">
+      <div class="card " style="text-align:center;padding:10%;background-color:transparent;border-radius:10%;">
+        <i style="color:#FFFFFF" class="fa fa-2x fa-comments-o" ></i>
+        <h4 style="color:#FFFFFF">Start Quiz</h4>
+      </div> 
+      <div class="card " style="text-align:center;padding:10%;background-color:transparent;border-radius:10%;">
+        <i style="color:#FFFFFF" class="fa fa-2x fa-users" ></i>
+        <h4 style="color:#FFFFFF">About Developers</h4> -->
+      </div>  
+    </div>
+    </ion-content>
+</ion-view>
+</body>
+</html>

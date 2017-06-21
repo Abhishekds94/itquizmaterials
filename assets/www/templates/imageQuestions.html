@@ -1,0 +1,570 @@
+<ion-view view-title="Dash" align-title="left">
+  <ion-nav-title>
+    <span class="main-title"><a style="text-decoration: none;" href="#/app/dash"><i class="fa fa-arrow-left" aria-hidden="true"></i>Home</a></span>
+  </ion-nav-title>
+   <ion-nav-bar class="bar-positive custom-dark">
+    <!-- <ion-nav-buttons side="left">
+    <a href="#/app/dash"><i class="fa fa-2x fa-angle-left" style="color: #FFFFFF"></i></a>
+    </ion-nav-buttons> -->
+  </ion-nav-bar>
+<!-- background-image:url(img/bgImage1.jpg);opacity: 2 -->
+  	<ion-content  style="background-color:#424242;">
+      <div ng-init="imageChanged()" class="card" style="box-shadow: none;background-color:#424242">
+        <div class="card " style=" text-align:center;padding:10%;background-color:#FFFFFF;border-radius:5%;">
+          <div ng-if='imageCount == 1'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this CEO of a famous mobile company</h4>
+            <img src="img/1.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 1' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Stephen Elop(Nokia)</p></h4>
+          </div>
+          <div ng-if='imageCount == 2'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this logo such that before the .ly a meaningful word is formed?</h4>
+            <img src="img/2.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 2' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Bit.ly</p></h4>
+          </div>
+          <div ng-if='imageCount == 3'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this logo</h4>
+            <img src="img/3.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 3' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Norton</p></h4>
+          </div>
+          <div ng-if='imageCount == 4'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) In which famous Indian director’s memory, did Google have this doodle</h4>
+            <img src="img/4.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 4' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Satyajit Ray</p></h4>
+          </div>
+          <div ng-if='imageCount == 5'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Today we have a better system of security on social networking sites other than usernames and passwords. Identify it.</h4>
+            <img src="img/5.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 5' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Dual Authentication</p></h4>
+          </div>
+          <div ng-if='imageCount == 6'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify him. He is not very famous, But he’s a founder of a very famous website</h4>
+            <img src="img/6.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 6' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Eduardo Saverin (Facebook)</p></h4>
+          </div>
+          <div ng-if='imageCount == 7'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the logo</h4>
+            <img src="img/7.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 7' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Adobe Flash</p></h4>
+          </div>
+          <div ng-if='imageCount == 8'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this Indian
+            </h4>
+            <img src="img/8.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 8' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Ankit Fadia</p></h4>
+          </div>
+          <div ng-if='imageCount == 9'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the logo
+            </h4>
+            <img src="img/9.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 9' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Zomato</p></h4>
+          </div>
+          <div ng-if='imageCount == 10'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this gadget</h4>
+            <img src="img/10.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 10' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Nintendo Wii U</p></h4>
+          </div>
+          <div ng-if='imageCount == 11'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) This was the original blueprint of which website</h4>
+            <img src="img/11.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 11' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Twitter</p></h4>
+          </div>
+          <div ng-if='imageCount == 12'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the person in the extreme right</h4>
+            <img src="img/12.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 12' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Sean Parker </p></h4>
+          </div>
+          <div ng-if='imageCount == 13'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the picture</h4>
+            <img src="img/13.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 13' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Amazon Silk (a web browser for Kindle Fire)</p></h4>
+          </div>
+          <div ng-if='imageCount == 14'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Old logo of which otherwise famous browser today?</h4>
+            <img src="img/14.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 14' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - UC Browser</p></h4>
+          </div>
+          <div ng-if='imageCount == 15'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the picture</h4>
+            <img src="img/15.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 15' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Accenture</p></h4>
+          </div>
+          <div ng-if='imageCount == 16'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this company</h4>
+            <img src="img/16.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 16' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Hon Hai (Foxconn)</p></h4>
+          </div>
+          <div ng-if='imageCount == 17'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) This award is given to the best startups. Techcrunch sponsors it. Which awards?</h4>
+            <img src="img/17.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 17' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Crunchies</p></h4>
+          </div>
+          <div ng-if='imageCount == 18'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Which company logo is this?</h4>
+            <img src="img/18.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 18' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Free Software Foundation</p></h4>
+          </div>
+          <div ng-if='imageCount == 19'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Give his name/company he heads</h4>
+            <img src="img/19.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 19' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Abidali Neemuchwala(CEO of Wipro)</p></h4>
+          </div>
+          <div ng-if='imageCount == 20'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the picture</h4>
+            <img src="img/20.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 20' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Bethesda</p></h4>
+          </div>
+          <div ng-if='imageCount == 21'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Who authored this book ?</h4>
+            <img src="img/21.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 21' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Steve Case</p></h4>
+          </div>
+           <div ng-if='imageCount == 22'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) They are Vivek Prabhakar and Shubhra Chadda.Which company did they start for selling souvenirs to foreign visitors in India?</h4>
+            <img src="img/22.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 22' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Chumbak.com</p></h4>
+          </div>
+           <div ng-if='imageCount == 23'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify him [hint:He is the creator of RSS feeds]</h4>
+            <img src="img/23.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 23' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Ramanathan V Guha</p></h4>
+          </div>
+           <div ng-if='imageCount == 24'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Logo of which reverse image search engine?</h4>
+            <img src="img/24.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 24' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - TinEye</p></h4>
+          </div>
+           <div ng-if='imageCount == 25'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this project/browser by Microsoft ?</h4>
+            <img src="img/25.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 25' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Spartan</p></h4>
+          </div>
+           <div ng-if='imageCount == 26'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) This picture belongs to which game ?</h4>
+            <img src="img/26.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 26' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Donkey Kong</p></h4>
+          </div>
+           <div ng-if='imageCount == 27'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Which key does this ISO symbol refer to?</h4>
+            <img src="img/27.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 27' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Escape Key</p></h4>
+          </div>
+           <div ng-if='imageCount == 28'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) What computer is related to this ?</h4>
+            <img src="img/28.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 28' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Macintosh</p></h4>
+          </div>
+           <div ng-if='imageCount == 29'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) This is a foldable form of something we use quite frequently in our life. What is this?</h4>
+            <img src="img/29.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 29' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Battery</p></h4>
+          </div>
+           <div ng-if='imageCount == 30'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) This is the headquarters of a company based in Hangzhou, China. Which company? [Hint: When seen from above, it seems to form the Chinese letters for A and B]</h4>
+            <img src="img/30.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 30' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Alibaba</p></h4>
+          </div>
+           <div ng-if='imageCount == 31'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this person. He is the co-founder of Napster</h4>
+            <img src="img/31.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 31' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Sean Parker</p></h4>
+          </div>
+           <div ng-if='imageCount == 32'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) What is the missing name ?</h4>
+            <img src="img/32.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 32' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Educomp</p></h4>
+          </div>
+           <div ng-if='imageCount == 33'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) This is a very famous online store. By what name was it previously known?</h4>
+            <img src="img/33.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 33' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - EA Store</p></h4>
+          </div>
+           <div ng-if='imageCount == 34'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this DIY Virtual Reality set-up</h4>
+            <img src="img/34.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 34' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Google Cardboard</p></h4>
+          </div>
+           <div ng-if='imageCount == 35'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the logo</h4>
+            <img src="img/35.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 35' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Kik</p></h4>
+          </div>
+           <div ng-if='imageCount == 36'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this logo which you see in the jersey of Delhi Dynamos</h4>
+            <img src="img/36.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 36' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Freecharge</p></h4>
+          </div>
+           <div ng-if='imageCount == 37'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Who wrote this book ?</h4>
+            <img src="img/37.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 37' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - S Ramadorai</p></h4>
+          </div>
+           <div ng-if='imageCount == 38'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) This is a film about whom ?</h4>
+            <img src="img/38.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 38' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Julian Assange</p></h4>
+          </div>
+           <div ng-if='imageCount == 39'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the logo</h4>
+            <img src="img/39.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+           <div ng-if='imageCount == 39' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Pixar</p></h4>
+          </div>
+          <div ng-if='imageCount == 40'>
+            <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the logo</h4>
+            <img src="img/40.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 40' d="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Slideshare</p></h4>
+          </div>
+          <div ng-if='imageCount == 41'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) dentify the two letter answer , which features the character from Despicable Me</h4>
+                <img src="img/41.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 41' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Minion Rush</p></h4>
+          </div>
+          <div ng-if='imageCount == 42'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the country where this service is used</h4>
+                <img src="img/42.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 42' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Pakistan</p></h4>
+          </div>
+          <div ng-if='imageCount == 43'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) 43. Reed Hastings borrowed this book and wfined for a later return</h4>
+                <img src="img/43.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 43' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Netflix</p></h4>
+          </div>
+          <div ng-if='imageCount == 44'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the messaging app endorsed by Katrina Kaif stared during Japan’s Tohoku Earthquake</h4>
+                <img src="img/44.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 44' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Line</p></h4>
+          </div>
+          <div ng-if='imageCount == 45'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Steve Wozniak at Xiaomi conference sitting with whom?</h4>
+                <img src="img/45.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 45' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Lei Jun </p></h4>
+          </div>
+          <div ng-if='imageCount == 46'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) What from the world of Microsoft ?</h4>
+                <img src="img/46.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 46' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - MS Surface</p></h4>
+          </div>
+          <div ng-if='imageCount == 47'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Which award ?</h4>
+                <img src="img/47.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 47' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Shorty Awards</p></h4>
+          </div>
+          <div ng-if='imageCount == 48'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the company which runs this ad</h4>
+                <img src="img/48.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 48' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Myntra</p></h4>
+          </div>
+          <div ng-if='imageCount == 49'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this person who was the Time Man of the Year in 1997. He is one of the founders of Intel</h4>
+                <img src="img/49.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 49' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Andy Grove</p></h4>
+          </div>
+          <div ng-if='imageCount == 50'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this game</h4>
+                <img src="img/50.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 50' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Bioshock Infinite</p></h4>
+          </div>
+          <div ng-if='imageCount == 51'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) He is the founder of which Indian e commerce giant?</h4>
+                <img src="img/51.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 51' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Snapdeal (Kunal Bahl)</p></h4>
+          </div>
+          <div ng-if='imageCount == 52'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Which keyboard layout was created by this person</h4>
+                <img src="img/52.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 52' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Dvorak</p></h4>
+          </div>
+          <div ng-if='imageCount == 53'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) This university in Dadri, Uttar Pradesh is named after the founder of a very famous Indian IT company</h4>
+                <img src="img/53.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 53' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Shiv Nadar University</p></h4>
+          </div>
+          <div ng-if='imageCount == 54'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) This two-gentleman founded something great in the world of Technology. What was founded by them?</h4>
+                <img src="img/54.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 54' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - HP(Hewlett-Packard)</p></h4>
+          </div>
+          <div ng-if='imageCount == 55'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) This Red Panda became became the official mascot for this organization. Which organization are we talking about ?</h4>
+                <img src="img/55.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 55' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Firefox (Firefox is the name for Red Panda)</p></h4>
+          </div>
+          <div ng-if='imageCount == 56'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this device</h4>
+                <img src="img/56.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 56' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Moto 360</p></h4>
+          </div>
+          <div ng-if='imageCount == 57'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this device</h4>
+                <img src="img/57.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 57' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Playstation 4</p></h4>
+          </div>
+          <div ng-if='imageCount == 58'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) What is this ?</h4>
+                <img src="img/58.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 58' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - PSP</p></h4>
+          </div>
+          <div ng-if='imageCount == 59'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify this logo</h4>
+                <img src="img/59.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 59' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Verisign</p></h4>
+          </div>
+          <div ng-if='imageCount == 60'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) 60. Logo of which company?</h4>
+                <img src="img/60.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 60' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Blackberry</p></h4>
+          </div>
+          <div ng-if='imageCount == 61'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Which professional social networking site shows the following error message ?</h4>
+                <img src="img/61.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 61' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - LinkedIn</p></h4>
+          </div>
+          <div ng-if='imageCount == 62'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the Indian Mobile maker</h4>
+                <img src="img/62.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 62' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Micromax</p></h4>
+          </div>
+          <div ng-if='imageCount == 63'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the logo</h4>
+                <img src="img/63.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 63' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Tumblr</p></h4>
+          </div>
+          <div ng-if='imageCount == 64'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Logo of which entertainment channel?</h4>
+                <img src="img/64.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 64' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Sony</p></h4>
+          </div>
+          <div ng-if='imageCount == 65'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the company</h4>
+                <img src="img/65.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 65' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Intel</p></h4>
+          </div>
+          <div ng-if='imageCount == 66'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the gaming company</h4>
+                <img src="img/66.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 66' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - EA (Electronic Arts)</p></h4>
+          </div>
+          <div ng-if='imageCount == 67'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Logo of which gaming company ?</h4>
+                <img src="img/67.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 67' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - King</p></h4>
+          </div>
+          <div ng-if='imageCount == 68'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) 68. Identify the personality from United Kingdom</h4>
+                <img src="img/68.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 68' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Charles Babbage</p></h4>
+          </div>
+          <div ng-if='imageCount == 69'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Which company’s headquarters is this?</h4>
+                <img src="img/69.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 69' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Youtube</p></h4>
+          </div>
+          <div ng-if='imageCount == 70'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) What is the significance of this Google Doodle</h4>
+                <img src="img/70.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 70' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - First Indian Film with sound </p></h4>
+          </div>
+          <div ng-if='imageCount == 71'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the logo</h4>
+                <img src="img/71.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 71' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Dubsmash</p></h4>
+          </div>
+          <div ng-if='imageCount == 72'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the author</h4>
+                <img src="img/72.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 72' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Nikola Tesla</p></h4>
+          </div>
+          <div ng-if='imageCount == 73'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the logo</h4>
+                <img src="img/73.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 73' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Qualcomm Snapdragon</p></h4>
+          </div>
+          <div ng-if='imageCount == 74'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Who is behind this campaign?</h4>
+                <img src="img/74.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 74' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Microsoft</p></h4>
+          </div>
+          <div ng-if='imageCount == 75'>
+                <h4 style="color:#000000;text-align:justify;">{{imageCount}}) Identify the logo</h4>
+                <img src="img/75.jpg" height="50%" width="50%" style="border-radius:10%;">
+          </div>
+          <div ng-if='imageCount == 75' id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:justify;padding-top:10px;padding-bottom:10px;">
+                <h4><p style="color:#4CAF50;text-align:center;">Answer - Google Translate</p></h4>
+          </div>
+          <div ng-if='imageCount == 76'>
+                <h3 style="color:#000000;text-align:center;">Thank You...</h3>
+          </div>
+      </div>
+         <div id="showDetails" ng-hide="showMoreDetails" class="colorBlue" style="text-align:center;padding-top:10px;padding-bottom:10px;" ng-if="imageCount!=76">
+              <button class="button button-outline button-light" type="button" ng-click="toggleInfoButtons()" style="background-color:#FFFFFF;">
+              <h4 style="color:#000000">HIDE ANSWER</h4></button>
+          </div>
+          <div id="hideDetails" ng-show="showMoreDetails" class="colorBlue" style="text-align:center;padding-top:10px;padding-bottom:10px;" ng-if="imageCount!=76">
+              <button class="button button-outline button-light " type="button" ng-click="toggleInfoButtons()" style="background-color:#FFFFFF;">
+              <h4 style="color:#000000">VIEW ANSWER</h4></button>
+          </div>
+          <!-- <div style="color:#FFFFFF;text-align:right">
+            <i class="fa fa-2x fa-arrow-circle-o-right"></i>
+          </div> -->
+          <span class="row" style="text-align:center;margin:auto">
+            <i class="fa fa-2x fa-arrow-circle-o-left" style="color:#FFFFFF;" ng-click="decreaseImageCount()" ng-if='imageCount>1'></i>
+            <p style="color:#FFFFFF;padding-left:48%" ng-if="imageCount==1"><b>{{imageCount}}</b></p>
+            <p style="color:#FFFFFF;padding-left:40%" ng-if="imageCount>1 && imageCount<76"><b>{{imageCount}}</b></p>
+            <i class="fa fa-2x fa-arrow-circle-o-right" style="color:#FFFFFF;margin-left: 130px;" ng-click="increaseImageCount()" ng-if='imageCount<76'></i>
+          </span>
+          <br />
+          <div class="row" style="margin-left: 90px;text-align: center;">
+            <input ng-model="imageKeyValue"  size="3" type="tel" maxlength="3" name="textCount" id="textCount">
+            <button ng-click="imageKeyChange(imageKeyValue)">Go to Question</button>
+          </div>
+      </div>
+      
+  	</ion-content>
+</ion-view>
